@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Website Blog Saya</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/script/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="/css/blog-home.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Photografi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+
+        <h1 class="my-4">Page Heading
+          <small>Secondary Text</small>
+        </h1>
+
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <img class="card-img-top" src="image1.jpg" alt="thubmnail">
+          <div class="card-body">
+            <h2 class="card-title">Judul Post 1</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="detailpost.html" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">
+            Posted on January 1, 2020 by
+          </div>
+        </div>
+
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <img class="card-img-top" src="image2.jpeg" alt="thubmnail">
+          <div class="card-body">
+            <h2 class="card-title">Judul Post 2</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+            <a href="detailpost.html" class="btn btn-primary">Read More &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">
+            Posted on January 1, 2020 by
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination justify-content-center mb-4">
+          <a href="post.html" class="btn btn-primary">Show More</a>
+        </div>
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+        <!-- Search Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Jam</h5>
+          <div class="card-body">
+              <div class="card bg-dark text-white">
+                <h3 class="card-title text-center">
+                <div class="d-flex flex-wrap justify-content-center mt-2">
+                  <a><span class="badge hours"></span></a> :
+                  <a><span class="badge min"></span></a> :
+                  <a><span class="badge sec"></span></a>
+                </div>
+                </h3>
+              </div>
+          </div>
+        </div>
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Masukkan pendapat kalian</h5>
+          <div class="card-body">
+              <form action="notimplemented.html">
+                <div class="form-group">
+                  <label for="name">Nama anda</label>
+                  <input type="text" class="form-control" id="nama">
+                </div>
+                <div class="form-group">
+                  <label for="pendapat">Pendapat</label>
+                  <input type="text" class="form-control" id="pendapat">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/script/jquery/jquery.min.js"></script>
+  <script src="/script/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  
+<script>
+    $(document).ready(function() {
+    setInterval( function() {
+    var hours = new Date().getHours();
+    $(".hours").html(( hours < 10 ? "0" : "" ) + hours);
+    }, 1000);
+    setInterval( function() {
+    var minutes = new Date().getMinutes();
+    $(".min").html(( minutes < 10 ? "0" : "" ) + minutes);
+    },1000);
+    setInterval( function() {
+    var seconds = new Date().getSeconds();
+    $(".sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+    },1000);
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Website Blog Saya</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/script/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="/css/blog-home.css" rel="stylesheet">
+
+  <style>
+      .profile-pic{
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Photografi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Post</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About Me
+                    <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Blog Entries Column -->
+            <div class="col-md-12">
+            <h1 class="my-4">Profile Saya</h1>
+            <!-- Blog Post -->
+            <div class="card mb-4 mx-auto" style="width: 25rem;">
+                <img class="rounded profile-pic" src="profile.jpg" alt="profile">
+                <div class="card-body">
+                <h2 class="card-title">Halo nama saya Lorem Ipsum</h2>
+                <p class="card-text">Selamat datang di blog saya</p>
+                <p class="card-text">Blog ini dibuat untuk menampilkan hasil dari hobi saya yaitu photografi. Selain photografi saya juga suka melakukan beberapa hal lain seperti:</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Travelling</li>
+                  <li class="list-group-item">Kuliner</li>
+                  <li class="list-group-item">Vlog</li>
+                </ul>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    </div>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/script/jquery/jquery.min.js"></script>
+  <script src="/script/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  
+<script>
+    $(document).ready(function() {
+    setInterval( function() {
+    var hours = new Date().getHours();
+    $(".hours").html(( hours < 10 ? "0" : "" ) + hours);
+    }, 1000);
+    setInterval( function() {
+    var minutes = new Date().getMinutes();
+    $(".min").html(( minutes < 10 ? "0" : "" ) + minutes);
+    },1000);
+    setInterval( function() {
+    var seconds = new Date().getSeconds();
+    $(".sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+    },1000);
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Website Blog Saya</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/script/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="/css/blog-home.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Photografi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Blog Entries Column -->
+      <div class="col-md-12">
+        <h1 class="my-4">Detail Post</h1>
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <img class="card-img-top" src="image1.jpg" alt="thubmnail">
+          <div class="card-body">
+            <h2 class="card-title">Judul Postingan</h2>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Tulisan disini merupakan bertujuan sebagai deskripsi dan cerita.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2020</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="/script/jquery/jquery.min.js"></script>
+  <script src="/script/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  
+<script>
+    $(document).ready(function() {
+    setInterval( function() {
+    var hours = new Date().getHours();
+    $(".hours").html(( hours < 10 ? "0" : "" ) + hours);
+    }, 1000);
+    setInterval( function() {
+    var minutes = new Date().getMinutes();
+    $(".min").html(( minutes < 10 ? "0" : "" ) + minutes);
+    },1000);
+    setInterval( function() {
+    var seconds = new Date().getSeconds();
+    $(".sec").html(( seconds < 10 ? "0" : "" ) + seconds);
+    },1000);
+    });
+  </script>
+
+</body>
+
+</html>
